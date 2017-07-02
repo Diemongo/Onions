@@ -1,0 +1,40 @@
+# Ignored files
+# Placed in the public domain by Springsmith Ltd in 2013
+#
+# Note: the first few lines are commented out as they concern
+# deliverable executables and without a Maven repository you
+# probably want to tie these in with the code that generated them.
+#
+# *.exe
+# *.jar
+# *.dll
+# *.apk
+*.suo
+*.user
+bin
+obj
+packages
+*.pdb
+*.cache
+*_svn
+*.svn
+*.suo
+*.user
+*.build-res
+*.o
+*.lo
+*.la
+*.al
+.libs
+*.so
+*.so.[0-9]*
+*.a
+*.pyc
+*.pyo
+*.rej
+*~
+\#*\#
+.\#*
+.*.swp
+.DS_Store
+.git
