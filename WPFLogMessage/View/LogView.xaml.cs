@@ -13,16 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFLogMessage
+namespace WPFLogMessage.View
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for LogView.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class LogView : UserControl
 	{
-		public MainWindow()
+		public LogView()
 		{
 			InitializeComponent();
+			var db = new diemongo_dk_dbEntities();
+			var log = new LogMessage();
+			log.Message = "Hellogoodmorning2";
+			db.LogMessage.Add(log);
+			db.SaveChanges();
 		}
 	}
 }
